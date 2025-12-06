@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://юристкемерово.рф
+
+# Sitemaps
+Sitemap: https://юристкемерово.рф/sitemap.xml
