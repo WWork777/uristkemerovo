@@ -156,7 +156,12 @@ export default function ConsultationForm({
     const Phone = "79609309191";
     const idInstance = "3100517801";
     const apiTokenInstance =
+<<<<<<< HEAD
       "4e23b210658549c881680633b93bb11301a0f304a927433da6";
+=======
+    "4e23b210658549c881680633b93bb11301a0f304a927433da6";
+    
+>>>>>>> bcfb9edf2635a1a3927ae7811da807964620c2cc
 
     try {
       // const response = await fetch("/api/telegram-proxi", {
@@ -172,6 +177,7 @@ export default function ConsultationForm({
       // });
 
       const maxResponse = await fetch(
+<<<<<<< HEAD
         `https://api.green-api.com/waInstance${idInstance}/SendMessage/${apiTokenInstance}`,
         {
           method: "POST",
@@ -181,6 +187,17 @@ export default function ConsultationForm({
             message: text,
           }),
         },
+=======
+      `https://api.green-api.com/waInstance${idInstance}/SendMessage/${apiTokenInstance}`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+        chatId: `-71184639158921`,
+        message: text,
+        }),
+      },
+>>>>>>> bcfb9edf2635a1a3927ae7811da807964620c2cc
       );
 
       if (!maxResponse.ok) {

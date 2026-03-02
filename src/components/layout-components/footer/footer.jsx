@@ -9,7 +9,7 @@ const SvgLeft = ({ liText, link }) => {
     </Link>
   );
 };
-export default function Footer() {
+export default function FooterKem() {
   return (
     <div className={styles.footer}>
       <div className={styles.footer_logo}>
@@ -22,25 +22,25 @@ export default function Footer() {
         <p>Политика конфиденциальности</p>
       </div>
       <div className={styles.footer_links}>
-        <SvgLeft liText="Услуги" link="/uslugi-dlya-fizicheskih-lits" />
-        <SvgLeft liText="Прайс-лист" link="/ceny" />
-        <SvgLeft liText="Практики" link="/praktika" />
-        <SvgLeft liText="Новости" link="/novosti" />
-        <SvgLeft liText="Контакты" link="/kontakty" />
+        <SvgLeft liText="Услуги" link="/kemerovo/fiz" />
+        <SvgLeft liText="Прайс-лист" link="/kemerovo/price" />
+        <SvgLeft liText="Практики" link="/kemerovo/practices" />
+        <SvgLeft liText="Новости" link="/kemerovo/news" />
+        <SvgLeft liText="Контакты" link="/kemerovo/contacts" />
       </div>
       <div className={styles.footer_contacts}>
         <h5>Главный офис</h5>
         <p>г. Кемерово, ул. Красная, д. 13</p>
         <h5>Телефон</h5>
-        <Link href="tel:+7 (923) 528-88-99">
-          <p>+7 (923) 528-88-99</p>
+        <Link href="tel:+79609309191">
+          <p>+7 (960) 930-91-91</p>
         </Link>
         <h5>Почта</h5>
-        <Link href="mailto:lawyer_kodeks@mail.ru">
-          <p>lawyer_kodeks@mail.ru</p>
+        <Link href="mailto:kodeks_yrist@mail.ru">
+          <p>kodeks_yrist@mail.ru</p>
         </Link>
         <div className={styles.footer_social}>
-          <Link href="https://api.whatsapp.com/send/?phone=79235288889&text&type=phone_number&app_absent=0">
+          <Link href="https://api.whatsapp.com/send/?phone=79609309191&text&type=phone_number&app_absent=0">
             <img src="/svg/contacts/wa.svg" className={styles.footer_svg} />
           </Link>
           <Link href="https://telegram.me/yurist42_kodeks">
@@ -49,11 +49,19 @@ export default function Footer() {
           <Link href="https://vk.com/kodeks42">
             <img src="/svg/contacts/vk.svg" className={styles.footer_svg} />
           </Link>
+          <Link href="https://max.ru/u/f9LHodD0cOKU3qvldFKHsXB1Hs0cS8Ve_tQtUFZ5F6BOwi4vntNqXHG2MiA">
+            <img src="/svg/contacts/max.svg" className={styles.footer_svg} />
+          </Link>
         </div>
         <div className={styles.footer_bottom}>
           <h5>1997-2025 КОДЕКСЪ. Все права защищены.</h5>
           <p>Политика конфиденциальности</p>
         </div>
+      </div>
+
+      {/* Добавленная строка с копирайтом */}
+      <div className={styles.footer_copyright}>
+        <a href="https://virlab42.ru">Сайт разработан компанией <span>Вирлаб</span></a>
       </div>
     </div>
   );
