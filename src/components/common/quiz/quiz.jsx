@@ -66,21 +66,6 @@ export default function Quiz() {
         },
       );
 
-<<<<<<< HEAD
-=======
-      // const response = await fetch("/api/telegram-proxi", {
-      //   method: "POST",
-      //   headers: {
-      //     "Content-Type": "application/json",
-      //   },
-      //   body: JSON.stringify({
-      //     chat_id: "-1002630836547",
-      //     text: message,
-      //     parse_mode: "Markdown",
-      //   }),
-      // });
-
->>>>>>> bcfb9edf2635a1a3927ae7811da807964620c2cc
       if (!maxResponse.ok) {
         throw new Error("Ошибка при отправке в Telegram");
       }
